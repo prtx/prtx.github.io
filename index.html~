@@ -130,7 +130,6 @@
                     <h4 class="service-heading">Music Enthusiast</h4>
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
-
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
@@ -139,7 +138,14 @@
                     <h4 class="service-heading">Comic/Cartoon Fan</h4>
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
-
+				<div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Wannapreneur</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -181,6 +187,20 @@
                     <div class="portfolio-caption">
                         <h4>The Opinio</h4>
                         <p class="text-muted"><a href="https://www.theopinio.co">www.theopinio.co</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/opinio.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Government Earthquake Information Site</h4>
+                        <p class="text-muted"><a href="https://eq.nitc.gov.np">eq.nitc.gov.np</a></p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
