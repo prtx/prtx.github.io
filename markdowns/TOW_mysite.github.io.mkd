@@ -61,4 +61,14 @@ Once thats covered lets start with out first assignment.
 **Key Concepts:** Loops, conditions, random number generation
 
 ####Resources
-* [random](https://docs.python.org/3/library/random.html)
+* [python-random](https://docs.python.org/3/library/random.html)
+
+###Assignment 1.2: Flashpoint experiment
+
+####Requirements
+1. Download [this](/resources/flash.txt) text file. It contain some confidential information about the fastest man alive.
+2. Display the number of line in the file.
+3. Count the number of occurence of th word 'impossible'.
+4. In an alternate universe Barry's mother lived instead of father. Display the text in the file after interchanging 'mother' with 'father'.
+
+**Key Concepts:** File reading, text search, replace
