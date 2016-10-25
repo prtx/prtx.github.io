@@ -16,6 +16,11 @@ h1 {
 	text-align: center;
 }
 
+img {
+	display: block;
+	margin: auto;
+}
+
 h2 {
 	color: #222222;
 }
