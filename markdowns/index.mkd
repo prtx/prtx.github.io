@@ -14,3 +14,5 @@ I love things to have an episodic progression. So do you. So buckle up and get t
 
 1. [TOW mysite.github.io](episodes/TOW_mysite.github.io.html)
 
+**Note:** After creating yoursite.github.io you will have some assignments to cover. Perform those assignments, upload them on github, create a page yoursite.github.io/assignments and list your completed assignments along with their github links. :)
+
