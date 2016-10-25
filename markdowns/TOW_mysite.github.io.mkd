@@ -35,3 +35,30 @@ To create yoursite.github.io follow given steps.
 1. Create a repository using your github username username.github.io.
 2. Upload your static web pages. Make sure your main page is index.html and in the root folder of your repository.
 3. **Note:** You can only make sites using your own username.
+
+##Python
+Python is a widely used high-level, general-purpose, interpreted, dynamic programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than possible in languages such as C++ or Java.
+
+Following are some useful resources for Python.
+
+* [Tutorialspoint: Python Basic Syntax](https://www.tutorialspoint.com/python/python_basic_syntax.htm)
+* [Python Basics](http://anh.cs.luc.edu/331/notes/PythonBasics.pdf)
+
+Once thats covered lets start with out first assignment.
+
+###Assignment 1.1: Rock-paper-scissor-lizard-spock
+
+**Sheldon:** Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors.
+
+![Alt text](https://s-media-cache-ak0.pinimg.com/564x/fe/64/18/fe64189dca60968cc4b99799464f4e91.jpg)
+
+####Requirements
+1. Create a loop to simulate the game.
+2. Read player's move.
+3. Computer's move should be randomly generated. In each turn computer should make its move before player.
+4. Create necessary conditions to determine winner or draw and display so.
+
+**Key Concepts:** Loops, conditions, random number generation
+
+####Resources
+* [random](https://docs.python.org/3/library/random.html)
