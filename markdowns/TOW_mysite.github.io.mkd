@@ -28,4 +28,10 @@ One other interesting command is
 
 	$ git status # see what the status of your staging area is compared to the code in your working directory
 
-This is just the gist of it. To learn more read [here](http://gitref.org/)
+This is just the gist of it. To learn more read [here](http://gitref.org/).
+
+To create yoursite.github.io follow given steps.
+
+1. Create a repository using your github username username.github.io.
+2. Upload your static web pages. Make sure your main page is index.html and in the root folder of your repository.
+3. **Note:** You can only make sites using your own username.
