@@ -532,6 +532,14 @@ ul {
 	#header nav a:active {
 		font-size: 1em;
 	}
+	.profile-image {
+		flex: 0 0 400px;
+		margin-right: 0px;
+	}
+	.profile-text {
+		text-align: center;
+		min-width: 250px;
+	}
 }
 
 @media screen and (max-width: 480px) {
@@ -542,5 +550,13 @@ ul {
 
 	#header nav {
 		padding: 0 1em;
+	}
+	.profile-image {
+		flex: 0 0 400px;
+		margin-right: 0px;
+	}
+	.profile-text {
+		text-align: center;
+		min-width: 250px;
 	}
 }
