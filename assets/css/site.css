@@ -184,6 +184,29 @@ main > section > h2 + p, main > section > h2 + .lead { margin-top: 0; }
 .thought h4 a { color: var(--fg); text-decoration: none; }
 .thought h4 a:hover { text-decoration: underline; }
 .thought p { margin: 0; color: var(--muted); }
+
+.listening-card {
+	padding: clamp(1rem, 4vw, 2rem);
+	border: 1px solid var(--rule);
+	border-radius: 1rem;
+	background: radial-gradient(ellipse at top right, #33263d, transparent 72%), var(--chip);
+}
+.listening-card h3 {
+	margin: 0 0 .45rem;
+	padding: 0;
+	border: 0;
+	font: 600 clamp(1.5rem, 4vw, 2.25rem)/1.15 "Source Serif 4", Georgia, serif;
+}
+.listening-card iframe {
+	display: block;
+	width: 100%;
+	margin: 1rem 0;
+	border: 0;
+	border-radius: .75rem;
+	background: #121212;
+}
+.listening-links { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; }
+.listening-links a:first-child { font-weight: 600; }
 .links { display: flex; flex-wrap: wrap; gap: .3rem 1.2rem; }
 
 /* Footer: "Say hello" + links, shown under every section */
