@@ -1,61 +1,349 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>prtx</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Pratik Shrestha</title>
+	<meta name="description" content="Pratik Shrestha builds data pipelines, ML models, little games and tools. PhD candidate at Drexel; previously a research intern at Synopsys." />
+	<meta name="color-scheme" content="light" />
+	<meta name="theme-color" content="#e8e4db" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Pratik Shrestha" />
+	<meta property="og:description" content="Builder, researcher, and PhD candidate at Drexel." />
+	<meta property="og:image" content="https://prtx.github.io/assets/images/headshot.jpg" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+	<link rel="stylesheet" href="assets/css/site.css" />
+	<script>
+		document.documentElement.classList.add('js');
+		// light by default; apply a saved choice before first paint (no flash)
+		try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+	</script>
 </head>
 
-<div class="is-preload" id="wrapper">
-	<div id="bg"></div>
-	<div id="main">
-		<!-- Header -->
-		<header id="header">
-			<div class="header-content">
-				<div class="profile-top">
-					<div class="profile-image">
-						<img src="assets/images/headshot.jpg" alt="Pratik Shrestha" />
-					</div>
-					<div class="profile-text">
-						<h1>PRATIK SHRESTHA</h1>
-						<p>Research Intern @ <a href="https://www.synopsys.com" target="_blank">Synopsys</a>
-						<p>Doctoral Candidate @ <a href="https://ice.ece.drexel.edu/" target="_blank">Drexel ICE</a>
-						</p>
-						<p>Machine Learning &nbsp;&bull;&nbsp; IC Design
-							&nbsp;&bull;&nbsp; Pokémon</p>
-						<p><a href="https://raw.githubusercontent.com/prtx/resume/master/resume.pdf" target="_blank">MY
-								RESUME</a></p>
-					</div>
-				</div>
+<body>
+	<a class="skip" href="#main">Skip to content</a>
 
-				<div class="profile-links">
-					<nav>
-						<ul>
-							<li><a href="https://www.linkedin.com/in/shresthapratik" target="_blank"
-									class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://scholar.google.com/citations?user=HeaeSksAAAAJ&hl=en" target="_blank"
-									class="fas fa-graduation-cap"><span class="label">Google
-										Scholar</span></a></li>
-							<li><a href="http://github.com/prtx" target="_blank" class="icon brands fa-github"><span
-										class="label">Github</span></a></li>
-							<li><a href="mailto:prtx.pratikshrestha@gmail.com" target="_blank"
-									class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-					</nav>
+	<button class="theme-toggle" type="button" aria-label="Switch between light and dark mode">
+		<svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+		<svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+	</button>
+
+	<!-- Hero: the original profile card -->
+	<header class="hero">
+		<div class="profile-top">
+			<div class="profile-image">
+				<img class="img-light" src="assets/images/headshot.jpg" width="960" height="960" alt="Portrait of Pratik Shrestha outdoors in a dark jacket" />
+				<img class="img-dark" src="assets/images/headshot-dark.jpg" width="400" height="400" loading="lazy" alt="Illustrated portrait of Pratik Shrestha" />
+			</div>
+			<div class="profile-text">
+				<h1><span class="lbl-light">PRATIK SHRESTHA</span><span class="lbl-dark">prtx<span class="cur" aria-hidden="true"></span></span></h1>
+				<p>Doctoral Candidate @ <a href="https://ice.ece.drexel.edu/" target="_blank" rel="noopener">Drexel ICE</a></p>
+				<p>Former Research Intern @ <a href="https://www.synopsys.com" target="_blank" rel="noopener">Synopsys</a></p>
+				<p>Machine Learning &nbsp;&bull;&nbsp; Graph Learning &nbsp;&bull;&nbsp; IC Design</p>
+				<p><a href="https://raw.githubusercontent.com/prtx/resume/master/resume.pdf" target="_blank" rel="noopener">MY RESUME</a></p>
+			</div>
+		</div>
+
+		<nav class="icons" aria-label="Profiles">
+			<a href="https://www.linkedin.com/in/shresthapratik" target="_blank" rel="noopener" class="fab fa-linkedin" aria-label="LinkedIn"></a>
+			<a href="https://scholar.google.com/citations?user=HeaeSksAAAAJ&amp;hl=en" target="_blank" rel="noopener" class="fas fa-graduation-cap" aria-label="Google Scholar"></a>
+			<a href="https://github.com/prtx" target="_blank" rel="noopener" class="fab fa-github" aria-label="GitHub"></a>
+			<a href="mailto:prtx.pratikshrestha@gmail.com" class="fas fa-envelope" aria-label="Email"></a>
+		</nav>
+
+		<nav class="choices" aria-label="Sections">
+			<a class="choice" href="#about" data-path="about">
+				<span class="name"><span class="lbl-light">About me</span><span class="lbl-dark">$ whoami</span></span>
+			</a>
+			<a class="choice" href="#research" data-path="research">
+				<span class="name"><span class="lbl-light">Research</span><span class="lbl-dark">$ ls ~/research</span></span>
+			</a>
+			<a class="choice" href="#publications" data-path="publications">
+				<span class="name"><span class="lbl-light">Publications</span><span class="lbl-dark">$ cat papers.bib</span></span>
+			</a>
+			<a class="choice" href="#etc" data-path="etc">
+				<span class="name"><span class="lbl-light">Notes</span><span class="lbl-dark">$ ls /mnt/notes</span></span>
+			</a>
+			<!-- secret: dark mode only, positioned beside (or below) the grid so the four cards never move -->
+			<a class="choice secret" href="#tmp" data-path="tmp" aria-label="/tmp">
+				<span class="name"><span class="lbl-dark">$ ls /tmp</span></span>
+			</a>
+		</nav>
+
+		<a class="scroll" href="#main" aria-label="Scroll to more">&darr;</a>
+	</header>
+
+	<main id="main">
+		<!-- Section switch: sticky while reading -->
+		<nav class="sections" aria-label="Switch section">
+			<a href="#about" data-path="about"><span class="lbl-light">About me</span><span class="lbl-dark">/home</span></a>
+			<a href="#research" data-path="research"><span class="lbl-light">Research</span><span class="lbl-dark">/research</span></a>
+			<a href="#publications" data-path="publications"><span class="lbl-light">Publications</span><span class="lbl-dark">/papers</span></a>
+			<a href="#etc" data-path="etc"><span class="lbl-light">Notes</span><span class="lbl-dark">/notes</span></a>
+			<a class="secret-tab" href="#tmp" data-path="tmp"><span class="lbl-dark">/tmp</span></a>
+		</nav>
+
+		<!-- ============ ABOUT ME ============ -->
+		<section class="path" id="about" aria-labelledby="about-h">
+			<h2 class="path-title" id="about-h" tabindex="-1"><span class="lbl-light">About me</span><span class="lbl-dark">$ whoami</span></h2>
+
+			<p class="lead">I like building things: data pipelines, machine learning models, little games, and tools I wish existed.</p>
+			<p>In a previous life, I was a coder living off of Stack Overflow. Now I live off of AI. Still figuring out the right way
+				to do things, and brewing some strong opinions along the way.</p>
+			<p class="roles-line">These days, I'm an <s>IC designer</s> <s>researcher</s> <s>ML guy</s> <s>builder</s> <s>tinkerer</s>
+				<s>problem solver</s> professional figure-it-out-er. The job title situation is a little messy.</p>
+
+			<h3>Experience</h3>
+			<ol class="timeline">
+				<li class="now"><span class="when">2019 – now</span><div><b>Ph.D. Electrical Engineering</b>, Drexel University<span class="note">Drexel-ICE Lab, advised by Dr. Ioannis Savidis. Machine learning for chip design, with a detour through hardware security.</span></div></li>
+				<li><span class="when">2025</span><div><b>Research Intern</b>, Synopsys<span class="note">Design Technology Group. Research toward better 3D heterogeneous integration.</span></div></li>
+				<li><span class="when">2024 – 25</span><div><b>Visiting Graduate Student</b>, UC San Diego<span class="note">VLSI CAD Lab. Six months testing my models inside real design tools.</span></div></li>
+				<li><span class="when">2018 – 19</span><div><b>Engineering Consultant</b>, Leapfrog Technology<span class="note">Developed the Ed-Fi Alliance analytics middleware for Texas school district data.</span></div></li>
+				<li><span class="when">2017 – 19</span><div><b>Software Engineer</b>, Beta Analytics<span class="note">Built NEPSEguide, a pricing and risk analytics tool for the Nepal Stock Exchange.</span></div></li>
+				<li><span class="when">2016 – 17</span><div><b>Associate Developer</b>, Logic Information Systems<span class="note">Oracle Retail analytics and data warehousing.</span></div></li>
+				<li><span class="when">2012 – 16</span><div><b>B.E. Computer Engineering</b>, Kathmandu University<span class="quest">Side quest · won Startup Weekend Kathmandu, 2014</span></div></li>
+			</ol>
+
+
+			<p class="cross">Next: <a href="#research" data-path="research"><span class="lbl-light">Research</span><span class="lbl-dark">/research</span> →</a></p>
+		</section>
+
+		<!-- ============ RESEARCH ============ -->
+		<section class="path" id="research" aria-labelledby="research-h">
+			<h2 class="path-title" id="research-h" tabindex="-1"><span class="lbl-light">Research</span><span class="lbl-dark">$ ls ~/research</span></h2>
+
+			<p>My research is <b>machine learning for electronic design automation (EDA)</b>, which means I:</p>
+			<ul class="projects">
+				<li>build models that predict timing, parasitics, and wirelength early in the design flow</li>
+				<li>work with <b>representation learning</b>: turning netlists and layouts into representations that one model can reuse
+					across many prediction tasks, and that hold up on circuits and process nodes it has never seen</li>
+			</ul>
+			<p>And because good models need good data, I build open datasets and benchmarks so anyone can train, test, and compare them.</p>
+
+			<div class="featured">
+				<p class="featured-label">Drexel ICE Lab</p>
+				<h4><a href="https://drexel-ice.github.io/projects/eda-learn/">EDA-Learn</a></h4>
+				<p>Most of what you need to do machine learning for chip design is locked away: proprietary designs, commercial
+					tools, and results nobody outside can reproduce. That makes it hard for students and small labs to join in,
+					and hard for anyone to tell which ideas actually work.</p>
+				<p>EDA-Learn aims to open it all up. <b>EDA-Schema</b> is the shared data: 7,776 physical design runs
+					across 18 circuits on four open process kits, packaged as twelve ready-to-use benchmark tasks.
+					<b>EDA-OpenML</b> (in progress) turns a single config file into a trained, evaluated model. A public
+					<b>leaderboard</b> scores every model against the design tool's own estimate, so claims can be checked
+					rather than taken on trust.</p>
+				<figure class="card-figure">
+					<a href="https://drexel-ice.github.io/projects/eda-learn/"><img src="assets/images/eda-learn-ecosystem.svg" width="584" height="308" loading="lazy"
+						alt="The EDA-Learn ecosystem: open designs, OpenROAD and open PDKs feed EDA-Schema (codebase and datasets), which feeds EDA-ML / AutoML (codebase and model artifacts), which feeds the leaderboard; researchers, universities and industry use and contribute to it." /></a>
+					<figcaption>The EDA-Learn ecosystem. Diagram: Drexel ICE Lab.</figcaption>
+				</figure>
+				<p>The data, code, and results are all open, so the field can build on shared ground instead of each group
+					rebuilding its own. EDA-Schema won Best Paper at GLSVLSI 2024.</p>
+				<p class="featured-links"><a href="https://drexel-ice.github.io/projects/eda-learn/">Explore EDA-Learn</a><a href="https://drexel-ice.github.io/EDA-learn-leaderboard/">leaderboard</a><a href="https://github.com/drexel-ice/EDA-schema">code &amp; dataset</a></p>
+			</div>
+
+			<p class="cross">Next: <a href="#publications" data-path="publications"><span class="lbl-light">Publications</span><span class="lbl-dark">/papers</span> →</a></p>
+		</section>
+
+		<!-- ============ PUBLICATIONS ============ -->
+		<section class="path" id="publications" aria-labelledby="publications-h">
+			<h2 class="path-title" id="publications-h" tabindex="-1"><span class="lbl-light">Publications</span><span class="lbl-dark">$ cat papers.bib</span></h2>
+
+			<div class="pubs">
+				<div class="pub-group">
+					<h4 class="pub-year">2026</h4>
+					<ul>
+						<li><span class="venue">IEEE/ACM International Conference on Computer-Aided Design (ICCAD) · Invited</span><span class="title"><a href="https://drexel-ice.github.io/assets/pdf/conferences/ICCAD_2026-DATC-RDF.pdf">2026 Extensions of IEEE CEDA DATC’s Robust Design Flow and Other Activities</a></span><span class="meta">Alec Aversa, David Chinnery, Amur Ghose, Aryan Jain, Andrew Johnson, Yugesh Kothari, Jakang Lee, Yiting Liu, Davit Markarian, Sahrima Jannat Oishwee, Fairooz Afia Saiyara, Ioannis Savidis, <b>Pratik Shrestha</b>, Paul Sirois, Zhiang Wang</span><span class="pub-links"><a href="https://drexel-ice.github.io/assets/pdf/conferences/ICCAD_2026-DATC-RDF.pdf">PDF</a></span></li>
+						<li><span class="venue">IEEE/ACM International Symposium on Machine Learning for CAD (MLCAD)</span><span class="title"><a href="https://drexel-ice.github.io/assets/pdf/conferences/MLCAD_2026-ResizerAgent.pdf">ResizerAgent: Agentic Strategy Selection for Timing Optimization in OpenROAD Resizer</a></span><span class="meta">Vidya A. Chhabria, Atmadip Dey, Andrew B. Kahng, Ioannis Savidis, <b>Pratik Shrestha</b>, Bing-Yue Wu</span><span class="pub-links"><a href="https://drexel-ice.github.io/assets/pdf/conferences/MLCAD_2026-ResizerAgent.pdf">PDF</a></span></li>
+						<li><span class="venue">arXiv preprint</span><span class="title"><a href="https://doi.org/10.48550/arxiv.2605.06952">EDA-Schema-V2: A Multimodal Schema, Open Datasets, and Benchmarks for Machine Learning in Digital Physical Design</a></span><span class="meta"><b>Pratik Shrestha</b>, Alec Aversa, Ioannis Savidis</span><span class="pub-links"><a href="https://drexel-ice.github.io/assets/pdf/preprints/2605.06952v1.pdf">PDF</a><a href="https://github.com/drexel-ice/EDA-schema">Code</a></span></li>
+					</ul>
+				</div>
+				<div class="pub-group">
+					<h4 class="pub-year">2025</h4>
+					<ul>
+						<li><span class="venue">IEEE International Conference on Computer Design (ICCD)</span><span class="title"><a href="https://doi.org/10.1109/iccd65941.2025.00127">Representation Learning for Digital Integrated Circuit Design Automation</a></span><span class="meta"><b>Pratik Shrestha</b>, Ioannis Savidis</span><span class="pub-links"><a href="https://drexel-ice.github.io/assets/pdf/conferences/ICCD_2025-representation.pdf">PDF</a></span></li>
+						<li><span class="venue">IEEE International Symposium on Circuits and Systems (ISCAS)</span><span class="title"><a href="https://doi.org/10.1109/iscas56072.2025.11043324">Differentiable Graph Neural Networks for Wirelength Estimation</a></span><span class="meta">Zhengfeng Wu, <b>Pratik Shrestha</b>, Saran Phatharodom, Ioannis Savidis</span><span class="pub-links"><a href="https://drexel-ice.github.io/assets/pdf/conferences/ISCAS_2025-differentiable.pdf">PDF</a></span></li>
+						<li><span class="venue">arXiv preprint</span><span class="title"><a href="https://doi.org/10.48550/arxiv.2505.02105">Deep Representation Learning for Electronic Design Automation</a></span><span class="meta"><b>Pratik Shrestha</b>, Saran Phatharodom, Alec Aversa, David Blankenship, Zhengfeng Wu, Ioannis Savidis</span><span class="pub-links"><a href="https://drexel-ice.github.io/assets/pdf/preprints/2505.02105v1.pdf">PDF</a></span></li>
+						<li><span class="venue">arXiv preprint</span><span class="title"><a href="https://doi.org/10.48550/arxiv.2506.00007">Emerging ML-AI Techniques for Analog and RF EDA</a></span><span class="meta">Zhengfeng Wu, Ziyi Chen, Nnaemeka Achebe, Vaibhav Venugopal Rao, <b>Pratik Shrestha</b>, Ioannis Savidis</span></li>
+					</ul>
+				</div>
+				<div class="pub-group">
+					<h4 class="pub-year">2024</h4>
+					<ul>
+						<li><span class="award"><i class="fas fa-award" aria-hidden="true"></i> GLSVLSI 2024 Best Paper Award</span><span class="venue">ACM Great Lakes Symposium on VLSI (GLSVLSI)</span><span class="title"><a href="https://doi.org/10.1145/3649476.3658718">EDA-schema: A Graph Datamodel Schema and Open Dataset for Digital Design Automation</a></span><span class="meta"><b>Pratik Shrestha</b>, Alec Aversa, Saran Phatharodom, Ioannis Savidis</span><span class="pub-links"><a href="https://drexel-ice.github.io/assets/pdf/conferences/GLSVLSI_2024-EDA-schema.pdf">PDF</a><a href="https://github.com/drexel-ice/EDA-schema">Code</a></span></li>
+						<li><span class="venue">International Symposium on Quality Electronic Design (ISQED)</span><span class="title"><a href="https://doi.org/10.1109/isqed60706.2024.10528675">EDA-ML: Graph Representation Learning Framework for Digital IC Design Automation</a></span><span class="meta"><b>Pratik Shrestha</b>, Ioannis Savidis</span><span class="pub-links"><a href="https://drexel-ice.github.io/assets/pdf/conferences/ISQED_2024.pdf">PDF</a></span></li>
+						<li><span class="venue">IEEE Dallas Circuits and Systems Conference (DCAS)</span><span class="title"><a href="https://doi.org/10.1109/dcas61159.2024.10539903">Transfer Learning of Arrival Time Prediction Models from a 65 nm to a 28 nm Process Node</a></span><span class="meta"><b>Pratik Shrestha</b>, Ioannis Savidis</span><span class="pub-links"><a href="https://drexel-ice.github.io/assets/pdf/conferences/DCAS_2024.pdf">PDF</a></span></li>
+					</ul>
+				</div>
+				<div class="pub-group">
+					<h4 class="pub-year">2023</h4>
+					<ul>
+						<li><span class="venue">IEEE International Symposium on Circuits and Systems (ISCAS)</span><span class="title"><a href="https://doi.org/10.1109/iscas46773.2023.10181447">Graph Representation Learning for Parasitic Impedance Prediction of the Interconnect</a></span><span class="meta"><b>Pratik Shrestha</b>, Ioannis Savidis</span><span class="pub-links"><a href="https://drexel-ice.github.io/assets/pdf/conferences/ISCAS_2023-parasitic.pdf">PDF</a></span></li>
+						<li><span class="venue">Government Microcircuit Applications and Critical Technology Conference (GOMACTech)</span><span class="title">Modeling Graph Neural Networks for Gate Level Arrival Time Prediction of Long Tailed Datasets</span><span class="meta"><b>Pratik Shrestha</b>, Saran Phatharodom, Ioannis Savidis</span><span class="pub-links"><a href="https://drexel-ice.github.io/assets/pdf/conferences/GOMACTech_2023.pdf">PDF</a></span></li>
+					</ul>
+				</div>
+				<div class="pub-group">
+					<h4 class="pub-year">2022</h4>
+					<ul>
+						<li><span class="venue">ACM/IEEE Workshop on Machine Learning for CAD (MLCAD)</span><span class="title"><a href="https://doi.org/10.1109/mlcad55463.2022.9900101">Graph Representation Learning for Gate Arrival Time Prediction</a></span><span class="meta"><b>Pratik Shrestha</b>, Saran Phatharodom, Ioannis Savidis</span><span class="pub-links"><a href="https://drexel-ice.github.io/assets/pdf/conferences/MLCAD_2022.pdf">PDF</a></span></li>
+						<li><span class="venue">IEEE International Symposium on Circuits and Systems (ISCAS)</span><span class="title"><a href="https://doi.org/10.1109/iscas48785.2022.9937990">Synthesis of Coupling Capacitance Based Hidden State Transitions for Sequential Logic Locking</a></span><span class="meta"><b>Pratik Shrestha</b>, Ioannis Savidis</span><span class="pub-links"><a href="https://drexel-ice.github.io/assets/pdf/conferences/ISCAS_2022b.pdf">PDF</a></span></li>
+					</ul>
+				</div>
+			</div>
+			<p class="more">Also on <a href="https://scholar.google.com/citations?user=HeaeSksAAAAJ&amp;hl=en">Google Scholar</a>.</p>
+
+			<h3>Tutorials</h3>
+			<div class="pubs">
+				<div class="pub-group">
+					<h4 class="pub-year">2025</h4>
+					<ul>
+						<li><span class="venue">IEEE International Conference on Computer Design (ICCD)</span><span class="title">Machine Learning for Automated Physical Design</span><span class="meta">Ioannis Savidis, <b>Pratik Shrestha</b></span><span class="pub-links"><a href="https://drexel-ice.github.io/assets/pdf/tutorials/ICCD2025_Tutorial.pdf">Slides</a></span></li>
+					</ul>
+				</div>
+				<div class="pub-group">
+					<h4 class="pub-year">2024</h4>
+					<ul>
+						<li><span class="venue">IEEE International Symposium on Circuits and Systems (ISCAS)</span><span class="title">Machine Learning for Digital Design Automation</span><span class="meta">Ioannis Savidis, <b>Pratik Shrestha</b></span><span class="pub-links"><a href="https://drexel-ice.github.io/assets/pdf/tutorials/ISCAS2024_TUTORIAL-R4.pdf">Slides</a></span></li>
+					</ul>
 				</div>
 			</div>
 
-		</header>
-	</div>
+			<p class="cross">Next: <a href="#etc" data-path="etc"><span class="lbl-light">Notes</span><span class="lbl-dark">/mnt/notes</span> →</a></p>
+		</section>
+
+		<!-- ============ /ETC ============ -->
+		<section class="path" id="etc" aria-labelledby="etc-h">
+			<h2 class="path-title" id="etc-h" tabindex="-1"><span class="lbl-light">Notes</span><span class="lbl-dark">$ ls /mnt/notes</span></h2>
+
+			<p class="empty">Notes, posts, and the occasional opinion on machine learning, chips, and building things. First ones coming soon.</p>
+
+			<!-- To add a note or post: copy this block above the "coming soon" line (and delete that line).
+			<article class="thought">
+				<time datetime="2026-11-20">Nov 2026</time>
+				<h4><a href="notes/my-first-note.html">Title of the note</a></h4>
+				<p>A one- or two-sentence summary of what you think and why.</p>
+			</article>
+			-->
+
+			<p class="cross">Next: <a href="#about" data-path="about"><span class="lbl-light">About me</span><span class="lbl-dark">/home</span> →</a></p>
+		</section>
+
+		<!-- ============ /TMP (secret, dark mode only) ============ -->
+		<section class="path secret-section" id="tmp" aria-labelledby="tmp-h">
+			<h2 class="path-title" id="tmp-h" tabindex="-1"><span class="lbl-light">/tmp</span><span class="lbl-dark">$ ls /tmp</span></h2>
+
+			<p class="empty">Scratch space for fun stuff. Nothing here yet, and anything that lands here might not survive the next reboot.</p>
+
+			<!-- To add something fun: copy this block above the line above (and delete that line).
+			<article class="thought">
+				<time datetime="2026-11-24">Nov 2026</time>
+				<h4><a href="https://example.com">Name of the fun thing</a></h4>
+				<p>One line on what it is.</p>
+			</article>
+			-->
+
+			<p class="cross">Next: <a href="#about" data-path="about"><span class="lbl-light">About me</span><span class="lbl-dark">/home</span> →</a></p>
+		</section>
+	</main>
+
+	<!-- Footer: contact on every section -->
+	<footer id="contact" aria-labelledby="contact-h">
+		<h2 id="contact-h">Say hello</h2>
+		<p>Side projects, ML, or chips:
+			<a href="mailto:prtx.pratikshrestha@gmail.com">prtx.pratikshrestha@gmail.com</a></p>
+		<p class="links">
+			<a href="https://raw.githubusercontent.com/prtx/resume/master/resume.pdf">Resume (PDF)</a>
+			<a href="https://github.com/prtx">GitHub</a>
+			<a href="https://www.linkedin.com/in/shresthapratik">LinkedIn</a>
+			<a href="https://scholar.google.com/citations?user=HeaeSksAAAAJ&amp;hl=en">Google Scholar</a>
+		</p>
+		<p class="handle">@prtx</p>
+	</footer>
+
 	<script>
-		window.onload = function () { document.body.classList.remove('is-preload'); }
-		window.ontouchmove = function () { return false; }
-		window.onorientationchange = function () { document.body.scrollTop = 0; }
+		// light / dark toggle, with a smooth cross-fade
+		document.querySelector('.theme-toggle').addEventListener('click', function () {
+			var root = document.documentElement;
+			var current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+			var next = current === 'dark' ? 'light' : 'dark';
+			function apply() {
+				root.setAttribute('data-theme', next);
+				try { localStorage.setItem('theme', next); } catch (e) {}
+				document.dispatchEvent(new Event('themechange'));
+			}
+			if (matchMedia('(prefers-reduced-motion: reduce)').matches) return apply();
+			if (document.startViewTransition) {
+				// modern browsers: the whole page (colours, photo, names) blends from old to new
+				var done = false;
+				var once = function () { if (!done) { done = true; apply(); } };
+				var t = document.startViewTransition(once);
+				// safety net: if the browser never runs the transition, switch anyway
+				setTimeout(function () { if (!done) { try { t.skipTransition(); } catch (e) {} once(); } }, 300);
+			} else {
+				// fallback: animate colours, backgrounds and borders for a moment
+				root.classList.add('theme-fading');
+				apply();
+				setTimeout(function () { root.classList.remove('theme-fading'); }, 500);
+			}
+		});
+
+		// long author lists: show the first three (plus me), then "and N more authors" that expands on click
+		document.querySelectorAll('.pubs .meta').forEach(function (meta) {
+			var names = meta.innerHTML.split(', ');
+			if (names.length < 6) return;
+			var me = names.findIndex(function (n) { return n.indexOf('<b>') === 0; });
+			var shown = names.slice(0, 3);
+			if (me >= 3) shown.push('\u2026 ' + names[me]);
+			var hidden = names.length - (me >= 3 ? 4 : 3);
+			var full = meta.innerHTML;
+			meta.innerHTML = shown.join(', ') + ', <button type="button" class="more-authors">and ' + hidden + ' more authors</button>';
+			meta.querySelector('.more-authors').addEventListener('click', function () { meta.innerHTML = full; });
+		});
+
+		// one section at a time: About me (default), Research, Publications, /etc
+		(function () {
+			var paths = ['about', 'research', 'publications', 'etc', 'tmp'];
+			var old = { builder: 'about', researcher: 'research', engineer: 'research', thoughts: 'etc' };
+			function show(id, scroll) {
+				if (paths.indexOf(id) < 0) return false;
+				paths.forEach(function (p) { document.getElementById(p).classList.toggle('active', p === id); });
+				document.querySelectorAll('[data-path]').forEach(function (a) {
+					a.setAttribute('aria-current', a.dataset.path === id ? 'true' : 'false');
+				});
+				if (scroll) {
+					var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+					document.getElementById('main').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' });
+					document.getElementById(id + '-h').focus({ preventScroll: true });
+				}
+				return true;
+			}
+			document.querySelectorAll('[data-path]').forEach(function (a) {
+				a.addEventListener('click', function (e) {
+					e.preventDefault();
+					history.replaceState(null, '', '#' + a.dataset.path);
+					show(a.dataset.path, true);
+				});
+			});
+			function isDark() {
+				var t = document.documentElement.getAttribute('data-theme');
+				return t === 'dark';
+			}
+			// /tmp is a dark-mode secret: switching to light while inside it goes back to About me
+			document.addEventListener('themechange', function () {
+				if (!isDark() && document.getElementById('tmp').classList.contains('active')) {
+					history.replaceState(null, '', '#about'); show('about');
+				}
+			});
+			var h = location.hash.slice(1);
+			if (old[h]) { h = old[h]; history.replaceState(null, '', '#' + h); }
+			if (h === 'tmp' && !isDark()) h = 'about';
+			if (show(h)) document.getElementById('main').scrollIntoView();
+			else show('about');
+		})();
 	</script>
-	</body>
+</body>
+
 </html>
